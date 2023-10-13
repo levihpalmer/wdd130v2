@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+
+body {
+    font-family: Arial, Roboto, Inter;
+    background-color: plum;
+    text-align: center;
+    line-height: 1.5em;
+}
+h1 {
+    margin: 40px 0;
+    color: white;
+}
+h1:hover {
+    color: black;
+}
+header p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 40%;
+    margin: 0 auto
+}
+h4 {
+    color: white;
+}
+ol {
+    width: 40%;
+    margin: 0 auto;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 2em;
+}
+img {
+    width: 15%;
+}
+main p {
+    width: 40%;
+    margin: 30px auto;
+    font-size: 1.7em;
+    line-height: 1.5em;
+    font-family: Georgia;
+    color: white;
+}
+footer p {
+    line-height: .5em;
+    font-size: .8em;
+}
+footer p:nth-of-type(2) {
+    margin-bottom: 60px;
+}
+/** {
+    border: 2px solid blue
+}*/

@@ -1,0 +1,17 @@
+body {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+#hero {
+    width: 100%;
+    display: block;
+}
+main {
+    background-color: #737373;
+}
+#body-imgs img {
+    width: 19%;
+    border-radius: 50%;
+    border: 13px solid #444444;
+    margin: 40px 50px;
+}

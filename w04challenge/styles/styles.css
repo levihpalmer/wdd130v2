@@ -1,0 +1,41 @@
+body {
+    font-family: Arial;
+    background-color: palevioletred;
+    text-align: center;
+}
+h1 {
+    padding: 20px;
+}
+h1, .georgia, h4 {
+    color: white;
+    width: 40%;
+    margin: 0 auto;
+    line-height: 1.5em;
+}
+h4 {
+    padding: 10px;
+}
+h1:hover {
+    color: black;
+}
+li {
+    font-weight: bold;
+    width: 40%;
+    margin: 0 auto;
+    text-align: left;
+}
+.georgia {
+    font-family: georgia;
+}
+main p {
+    font-size: 2em;
+}
+img {
+    width: 30%
+}
+footer p {
+   margin: 0; 
+}
+* {
+    border: 2px solid blue;
+}
