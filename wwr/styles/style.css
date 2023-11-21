@@ -60,8 +60,12 @@ nav a:hover {
     margin-top: 50px;
     border-radius: 5px;
 }
-.book:hover, .join:hover {
+.book:hover {
     background-color: #184464;
+    color: white;
+}
+.join:hover {
+    background-color: #6f7364;
     color: white;
 }
 .msg {
@@ -131,6 +135,9 @@ footer .social img {
     opacity: 0.9;
     transform: scale(1.1);
 
+}
+section h2 {
+    color: #184464;
 }
 main section img {
     box-sizing: border-box;
