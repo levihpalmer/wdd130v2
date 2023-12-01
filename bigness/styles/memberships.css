@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:wght@400;600&family=Poppins:wght@400;600&family=Raleway:wght@400;600&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+/*** HEADER ***/
+/** NAV **/
+
+body {
+    width: 100%;
+    max-width: 1700px;
+    margin: 0;
+    font-family: Montserrat, Raleway, Poppins;
+}
+nav {
+    font-weight: 600;
+    background-color: black;
+    padding: 15px 0;
+    position: relative;
+    z-index: 10;
+}
+.nav-box {
+    width: calc(700px + 30%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.logo {
+    height: 80px;
+}
+.logo-letters {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 205px;
+    margin-right: 50px;
+}
+.letters {
+    display: inline;
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1.5px;
+}
+.links {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+}
+.links a:nth-of-type(-n+4):hover {
+    color: #FF4500;
+}
+.join {
+    padding: 8px 35px;
+    background-color: #FF4500;
+    /*border-radius: 2px;*/
+}
+.join:hover {
+    background-color: #FCA310;
+    color: black;
+    transition: 0.2s ease;
+}
+
+/** BANNER **/
+
+.banner {
+    display: grid;
+    grid-template-columns: auto calc(700px + 30%) auto;
+    background-image: linear-gradient(to bottom, #222222, black);
+}
+.banner-info {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.hero {
+    height: 620px;
+    grid-column: 1/4;
+    margin-top: 30px;
+    position: relative;
+    right: 70px;
+}
+.msg-box {
+    background-color: #FCA310;
+    margin: 70px 0 70px 30px;
+    grid-column: 6/13;
+    grid-row: 1/3;
+    border-radius: 8px;
+    text-align: center;
+}
+.msg-box h1 {
+    font-family: 'League Gothic';
+    font-size: 9.3em;
+    line-height: 40px;
+    letter-spacing: 3px;
+    margin-bottom: 65px;
+}
+.msg-box h1:nth-of-type(1) {
+    margin-top: 140px;
+}
+.msg-box h2 {
+    letter-spacing: 2px;
+    width: 60%;
+    margin: 0 auto;
+    line-height: 35px;
+    font-size: 1.3em;
+}
+.msg {
+    width: 75%;
+    margin: 0 auto;
+}
+.join-button {
+    background-color: #FF4500;
+}
+.member-button a {
+    background-color: #FF4500;
+    font-weight: 600;
+    font-size: 1.25em;
+    padding: 8px 24px;
+    margin: 50px;
+}
+.member-button {
+    margin: 30px;
+}
+.member-button a:hover {
+    background-color: black;
+    transition: 0.2s ease;
+}
+.extend-banner {
+    grid-column: 1/2;
+    height: 110px;
+}
+
+/** MEMBERSHIP MESSAGE **/
+
+.choose {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+.choose h2 {
+    margin: 80px 0 10px;
+    font-family: 'League Gothic';
+    font-size: 3.5em;
+}
+.choose h3 {
+    margin: 30px 0;
+    font-weight: 400;
+}
+
+/** MEMBERSHIP CARDS **/
+
+#memberships {
+    display: grid;
+    grid-template-columns: auto calc(700px + 30%) auto;
+    /*background-color: black;*/
+}
+.cards {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    grid-gap: 35px;
+    margin-top: 60px;
+}
+.core, .ultimate {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(236, 236, 236);
+}
+.elite {
+    background-color: #fab038;
+    border-radius: 10px;
+}
+.cards h4 {
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+.cards h3 {
+    font-size: 4.5em;
+    font-family: 'League Gothic';
+    letter-spacing: 2px;
+    margin: 25px 0 5px;
+}
+.cards h5 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+.cards a {
+    background-color: #FF4500;
+    padding: 8px 18px;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+.buy {
+    margin-top: 35px;
+    margin-bottom: 0;
+}
+.cards h6 {
+    margin: 15px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.cards .last {
+    margin-bottom: 50px;
+}
+.core {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.elite {
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+.ultimate {
+    grid-column: 3/4;
+    grid-row: 1/4;
+}
+.ultimate a:hover, .core a:hover, .elite a:hover {
+    background-color: black;
+    transition: 0.2s ease;
+}
+.core, .elite, .ultimate {
+    transition: transform 0.2s;
+}
+.core:hover, .elite:hover, .ultimate:hover {
+    transform: scale(1.02);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body {
+    background-color: black;
+}*/
+
+
+
+/* {
+    border: 1px solid blue;
+}

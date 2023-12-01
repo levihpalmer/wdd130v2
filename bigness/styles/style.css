@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:wght@400;600&display=swap');
+
+/*** HEADER/NAV ***/
+body {
+    width: 100%;
+    max-width: 1700px;
+    margin: 0;
+}
+nav {
+    font-family: Montserrat;
+    background-color: black;
+    padding: 15px 0;
+    display: grid;
+    grid-template-columns: 1fr calc(700px + 30%) 1fr ;
+    position: relative;
+    z-index: 10;
+}
+.logo {
+    height: 80px;
+    display: inline;
+}
+.nav-box {
+    /*margin: 0 50px;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 2/3;
+    /*margin: 0 calc(30% - 300px);*/
+}
+.logo-letters {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 205px;
+    margin-right: 50px;
+}
+.letters {
+    display: inline;
+    font-size: 2em;
+    letter-spacing: 3px;
+    /*position: relative;
+    bottom: 25px;*/
+}
+a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1.5px;
+}
+.join {
+    padding: 8px 35px;
+    background-color: #FF4500;
+    border-radius: 2px;
+}
+.links {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+}
+header {
+    font-weight: 600;
+}
+
+/*** MAIN ***/
+
+main {
+    display: grid;
+    grid-template-columns: 1fr calc(700px + 30%) 1fr ;
+    grid-template-rows: repeat(6, 110px);
+}
+.background {
+    grid-column: 1/4;
+    grid-row: 1/7;
+    background-image: linear-gradient(to bottom, #f9aa2b, #FCA310);
+   /* margin-bottom: 70px;*/
+}
+
+.circle {
+    grid-column: 1/10;
+    grid-row: 1/10;
+    background-image: linear-gradient(to bottom, #ffffff00, rgba(255, 255, 255, 0.238), #ffffff00)  ;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 180px;
+    overflow: hidden;
+}
+
+.middle-column {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 110px);
+    grid-gap: 18px;
+}
+.hero {
+    grid-column: 8/10;
+    grid-row: 1/3;
+    height: 660px;
+    z-index: 1;
+}
+.top-h1 {
+    /*display: flex;
+    justify-content: space-around;*/
+    grid-column: 2/7;
+    grid-row: 1/2;
+    text-align: center;
+    width: 500px;
+}
+.top-h1 h1 {
+    display: inline;
+    font-family: Montserrat;
+    position: relative;
+    top: 100px;
+    letter-spacing: 4px;
+    z-index: 5;
+}
+.bottom-h1 {
+    font-family: 'League Gothic';
+    font-size: 11em;
+    letter-spacing: 20px;
+    grid-column: 1/6;
+    text-align: center;
+    position: relative;
+    bottom: 230px;
+    z-index: 5;
+}
+
+/*** CARDS ***/
+.locations {
+    grid-column: 1/4;
+}
+.members {
+    grid-column: 4/7;
+}
+.classes {
+    grid-column: 7/10;
+}
+.trainers {
+    grid-column: 10/13;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1/13;
+    grid-row-start: 6;
+}
+
+.locations, .members, .classes, .trainers {
+    background-color: #F2F2F2;
+    /*height: 290px;*/
+    box-sizing: border-box;
+    /*padding: 40px;*/
+    border-radius: 15px;
+    margin: 0 7.5px;
+    margin-top: 20px;
+    position: relative;
+    bottom: 60px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+h3 {
+    font-family: 'League Gothic';
+    position: relative;
+    bottom: 45px;
+    font-size: 2em;
+    /*line-height: 80px;*/
+}
+section p {
+    font-family: Montserrat;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    position: relative;
+    bottom: 75px;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    position: relative;
+}
+.material-symbols-outlined {
+    font-size: 40px !important;
+}
+
+
+
+
+/* {
+    border: 1px solid red;
+}
