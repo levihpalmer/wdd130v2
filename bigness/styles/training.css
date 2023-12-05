@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:wght@400;600&family=Poppins:wght@400;600&family=Raleway:wght@400;600&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+/*** HEADER ***/
+/** NAV **/
+
+body {
+    width: 100%;
+    max-width: 1700px;
+    margin: 0;
+    font-family: Montserrat, Raleway, Poppins;
+}
+nav {
+    font-weight: 600;
+    background-color: black;
+    padding: 15px 0;
+    position: relative;
+    z-index: 10;
+}
+.nav-box {
+    width: calc(700px + 30%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.logo {
+    height: 80px;
+}
+.logo-letters {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 205px;
+    margin-right: 50px;
+}
+.letters {
+    display: inline;
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1.5px;
+}
+.links {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+}
+.links a:nth-of-type(-n+4):hover {
+    color: #FF4500;
+}
+.join {
+    padding: 8px 35px;
+    background-color: #FF4500;
+    /*border-radius: 2px;*/
+}
+.join:hover {
+    background-color: #FCA310;
+    color: black;
+    transition: 0.2s ease;
+}
+
+/** BANNER **/
+
+.banner {
+    background-image: linear-gradient(to bottom, #f9aa2b, #FCA310);
+    display: grid;
+    grid-template-columns: auto calc(700px + 30%) auto;
+}
+.banner-message {
+    grid-column: 2/3;
+    text-align: center;
+}
+.banner h1 {
+    font-family: 'League Gothic';
+    font-size: 15em;
+    letter-spacing: 8px;
+    margin: 0;
+}
+.banner h2 {
+    font-size: 1.9em;
+    letter-spacing: 4px;
+    margin: 30px 0 0;
+}
+
+/** FOOTER **/
+
+footer {
+    background-color: #333333;
+    color: white;
+    padding: 20px 0;
+    letter-spacing: 1.5px;
+    font-size: 0.9em;
+    padding: 30px 0;
+}
+.footer-box {
+    width: calc(700px + 30%);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.socials img {
+    width: 35px;
+    margin: 3px;
+    transition: transform 0.2s;
+}
+.socials img:hover {
+    transform: scale(1.1)
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer a:hover {
+    color: #FF4500;
+}
