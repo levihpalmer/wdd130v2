@@ -81,13 +81,60 @@ a {
     font-family: 'League Gothic';
     font-size: 15em;
     letter-spacing: 8px;
-    margin: 0;
+    margin: 0 0 30px;
 }
 .banner h2 {
     font-size: 1.9em;
     letter-spacing: 4px;
-    margin: 30px 0 0;
+    margin: 60px 0 0;
 }
+
+/** CONTENT **/
+
+.content {
+    display: grid;
+    grid-template-columns: auto calc(700px + 30%) auto;
+}
+.philosophy {
+    grid-column: 2/3;
+}
+.trainers {
+    grid-column: 2/3;
+}
+.trainers img {
+    width: 30%;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+.trainer1, .trainer2, .trainer3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.trainer-message {
+    width: 60%;
+}
+.trainers p {
+    line-height: 1.7em;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+.philosophy h1 {
+    font-family: 'League Gothic';
+    font-size: 3.5em;
+    margin: 70px 0 30px;
+}
+.trainers h2 {
+    font-family: 'League Gothic';
+    text-decoration: underline;
+    font-size: 2.5em;
+    margin: 60px 0 90px;
+    text-align: center;
+}
+.trainers h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
 
 /** FOOTER **/
 
@@ -120,4 +167,8 @@ footer a {
 }
 footer a:hover {
     color: #FF4500;
+}
+
+/* {
+    border: 1px solid blue;
 }
